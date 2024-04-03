@@ -6,3 +6,27 @@ Content-Type: application/json
   "details": "Evento de programação",
   "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/43e9e054-f097-46c3-bf35-d819cd4c569d/attendees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+
+###
+
+GET http://localhost:3333/events/43e9e054-f097-46c3-bf35-d819cd4c569d
+Content-Type: application/json
+
+{}
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+Content-Type: application/json
+
+{}
