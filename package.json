@@ -16,9 +16,12 @@
   "scripts": {
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
+    "db:seed": "prisma db seed",
     "dev": "tsx watch --env-file .env src/server.ts",
     "build": "tsup src --format esm",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
