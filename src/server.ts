@@ -32,7 +32,7 @@ app.register(fastifySwagger, {
     info: {
       title: 'pass.in',
       description:
-        'Especificação da API para o back-end da aplicação pass.in construida durante o NLW 15 - Unite da Rocketseat.',
+        'Especificação da API para o back-end da aplicação pass.in construída durante o NLW 15 - Unite da Rocketseat.',
       version: '1.0.0',
     },
   },
