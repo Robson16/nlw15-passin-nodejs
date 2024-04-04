@@ -1,4 +1,7 @@
-POST http://localhost:3333/events
+@baseUrl = http://localhost:3333
+
+# @name create_event
+POST {{baseUrl}}/events
 Content-Type: application/json
 
 {
@@ -9,7 +12,8 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3333/events/43e9e054-f097-46c3-bf35-d819cd4c569d/attendees
+# @name register_for_event
+POST {{baseUrl}}/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees
 Content-Type: application/json
 
 {
@@ -19,14 +23,32 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/events/43e9e054-f097-46c3-bf35-d819cd4c569d
+# @name get_event
+GET {{baseUrl}}/events/9e9bd979-9d10-4915-b339-3786b1634f33
 Content-Type: application/json
 
 {}
 
 ###
 
-GET http://localhost:3333/attendees/1/badge
+# @name get_attendee_badge
+GET {{baseUrl}}/attendees/10000/badge
+Content-Type: application/json
+
+{}
+
+###
+
+# @name check_in
+GET {{baseUrl}}/attendees/10000/check-in
+Content-Type: application/json
+
+{}
+
+###
+
+# @name get_event_attendees
+GET {{baseUrl}}/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees
 Content-Type: application/json
 
 {}
