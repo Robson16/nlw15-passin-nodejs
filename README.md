@@ -33,7 +33,7 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 ## Documentação da API (Swagger)
 
-Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
+Para documentação da API, acesse o link: https://passin-api.onrender.com/docs
 
 ## Banco de dados
 

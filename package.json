@@ -1,5 +1,6 @@
 {
   "name": "nlw15-passin-nodejs",
+  "homepage": "https://passin-api.onrender.com/docs",
   "version": "1.0.0",
   "author": "Robson H. Rodrigues <robhenrod@gmail.com>",
   "repository": "https://github.com/Robson16/nlw15-passin-nodejs",
