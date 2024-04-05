@@ -14,7 +14,7 @@
     "node": ">=20.10.0"
   },
   "scripts": {
-    "migrate": "npx prisma migrate dev",
+    "migrate": "npx prisma migrate deploy",
     "build": "tsup src --format esm",
     "dev": "tsx watch --env-file .env src/server.ts",
     "dev:migrate": "prisma migrate dev",
