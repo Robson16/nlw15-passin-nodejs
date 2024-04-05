@@ -1,6 +1,7 @@
 import fastifyCors from '@fastify/cors'
 import fastifySwagger from '@fastify/swagger'
 import fastifySwaggerUi from '@fastify/swagger-ui'
+import 'dotenv/config'
 import fastify from 'fastify'
 import {
   jsonSchemaTransform,
@@ -50,6 +51,8 @@ app.register(getAttendeeBadge)
 app.register(checkIn)
 app.register(getEventAttendees)
 
-app.listen({ port: 3333, host: '0.0.0.0' }).then(() => {
+const port = Number(process.env.PORT || 3333)
+
+app.listen({ port, host: '0.0.0.0' }).then(() => {
   console.log('HTTP Server Running!')
 })
